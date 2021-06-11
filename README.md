@@ -19,5 +19,10 @@ Here is some skeleton code to get you started:
     sw = swalign.LocalAlignment(scoring)  # you can also choose gap penalties, etc...
     alignment = sw.align('ACACACTA','AGCACACA')
     alignment.dump()
+    
+    # print mapping score, number of matches, percent identity
+    alignment.score
+    alignment.matches
+    alignment.identity
 
 For other uses, see the script in bin/swalign or https://compgen.io/projects/swalign
